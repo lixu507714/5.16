@@ -80,13 +80,14 @@ function imgLazyLoader(container){
       delete imgArr[_key];
 
       // 调用定时器
-      if(autoLoadTimer){clearTimeout(autoLoadTimer)};
+      if(autoLoadTimer){clearTimeout(autoLoadTimer)}
 
       autoLoadTimer=setTimeout(autoLoad,1000);
    }
 }
 imgLazyLoader($("#container"));
 
+//lixu
 
 
 
