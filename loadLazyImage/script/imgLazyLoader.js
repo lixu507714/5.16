@@ -11,12 +11,12 @@ function imgLazyLoader(container){
    // 浏览器窗口尺寸发生改变时
    $(window).resize(function(){
        initImg();
-   })
+   });
 
    // 当拖动滚动条
    $(window).scroll(function(){
        loadImg();
-   })
+   });
 
    autoLoadTimer=setTimeout(autoLoad,5000);
 
@@ -26,7 +26,7 @@ function imgLazyLoader(container){
        restartAutoLoadTimer=setTimeout(function(){
            autoLoad();
        },5000)
-   })
+   });
 
    function initImg(){
       // 遍历所有图片
