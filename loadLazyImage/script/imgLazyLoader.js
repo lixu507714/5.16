@@ -76,6 +76,7 @@ function imgLazyLoader(container){
             tempImg.attr("src",tempImg.attr("lazy-src"));
          }
       }
+
       delete imgArr[_key];
 
       // 调用定时器
